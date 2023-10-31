@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="taps">
+        <header>
+            <img src="./img/hero-bcg.jpeg" class="img1" alt="">
+            <menu>
+                <img src="./img/logo.svg" alt="">
+                <ul>
+                    <li data-top="0"><h3>home</h3></li>
+                    <li data-top="0">about</li>
+                    <li data-top="0">natur</li>
+                    <li data-top="0">tours</li>
+                </ul>
+            </menu>
+            <div class="min">
+                <h2>scroll project</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos neque sunt in? Id, necessitatibus quos quisquam distinctio laudantium fugiat? </p>
+                <button id="btn">explore tours</button>
+            </div>
+        </header>
+        <section>
+            <div class="about">
+                <h3 class="-h3">about</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio hic nisi doloribus quod laborum ea magnam tempora tenetur, iure nihil sunt dolores corrupti fugiat laudantium assumenda ut voluptatem cum deleniti ducimus nulla officiis. Omnis eaque officiis nam excepturi perferendis. Corrupti, expedita atque? Unde dignissimos consectetur illum dolor culpa! Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam facilis, odit aliquam non sequi unde commodi, temporibus, sit iure dolore. Optio reiciendis fugiat dignissimos quia, mollitia modi corporis quibusdam tempore autem, quod cum minus accusamus rerum rem reprehenderit commodi nesciunt distinctio et vel officia odit eaque! Voluptate, officiis facere.</p>
+            </div>
+            <div class="natur">
+                <h3 class="-h3">natur</h3>
+                <div class="p-img">
+                    <img src="./img/1.jpg" alt="">
+                    <img src="./img/4.jpg" alt="">
+                    <img src="./img/3.jpg" alt="">
+                </div>
+                
+            </div>
+            <div class="tours">
+                <h3 class="-h3">tours</h3>
+                <div class="p-pragrapg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ab corporis delectus. Quisquam quaerat dolores iusto eius quos et. Vel ab praesentium aut voluptate reprehenderit provident at aspernatur fuga soluta.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ab corporis delectus. Quisquam quaerat dolores iusto eius quos et. Vel ab praesentium aut voluptate reprehenderit provident at aspernatur fuga soluta.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia ab corporis delectus. Quisquam quaerat dolores iusto eius quos et. Vel ab praesentium aut voluptate reprehenderit provident at aspernatur fuga soluta.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur.monila@gmail.com</p>
+        </footer>
+    </div>
+
+
+    <script>
+        let _h3 = document.querySelectorAll(".taps h3");
+        let _li = document.querySelectorAll("ul>li");
+        
+        _h3.forEach((val, i)=>{
+            let top = val.offsetTop
+            _li[i].setAttribute("data-top", top);
+        })
+        _li.forEach((val)=>{
+            val.addEventListener("click" , ()=>{
+                let o = (val.getAttribute("data-top"))-130
+                window.scrollTo(0 , o)
+                
+            })
+        })
+
+    </script>
+</body>
+</html>

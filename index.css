@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+   
+}
+header .img1{
+    width: 100%;
+    height: 100vh;
+}
+menu{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top:0;
+    background:linear-gradient(rgba(63, 208, 212, 0.9), rgba(0, 0, 0, 0.7));
+    display: flex;
+    justify-content: space-around;
+}
+menu img{
+    width: 5%;
+    
+}
+menu ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 100;
+}
+menu ul li{
+    font-size: 24px;
+    color: white;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.min{
+    width: 40%;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    text-align: center;
+    color: white;
+}
+
+.min h2{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.min button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 1px solid black;
+}
+/* --------about---------- */
+.about{
+    width:100%;
+    height: 100vh;
+    padding-top: 130px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.542);
+}
+.about .-h3{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(52, 40, 62);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about p{
+    padding: 20px;
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* -----------natur-------------- */
+.natur{
+    width:100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(52, 40, 62);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.323);
+}
+.natur .p-img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.natur img{
+    width: 20%;
+    height: 300px;
+    margin-left: 20px;
+    border: 5px outset rgba(63, 208, 212, 0.5);
+}
+/* ---------tours----------------*/
+.tours{
+    width:100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(52, 40, 62);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(41, 40, 40, 0.568);
+}
+.tours .p-pragrapg{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.tours .p-pragrapg p{
+    width: 30%;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    border-left: 2px solid rgba(63, 208, 212, 0.5);
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+}
+/* -------------footer--------------- */
+footer{
+    width:100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(52, 40, 62);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right ,rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7));
+}
